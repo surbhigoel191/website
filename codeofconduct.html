@@ -10,12 +10,73 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/MichaelGillett/FluentFTW/dist/css/fluent.css">
     <title>Tribe</title>
-</head>
+    <style>.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
 
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 3px 3px purple;
+  font-family: 'Lobster';
+}
+h3{
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 3px 3px purple;
+  font-family: 'Lobster';
+}
+p {
+        margin: 30px
+        font-size: 100px;
+        text-align: center;
+    }
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}</style>
+</head>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 <body>
     <div class="container" style="margin: 20px">
-        <h1>MSFT Tribe Code of Conduct</h1><br>
-        <h3>August 29, 2019</h3>
+        <h1 style="text-align: center;">MSFT Tribe Code of Conduct</h1>
+        <h3 style="text-align: center;">August 29, 2019</h3><br>
         <p>
             The MSFT Tribe is designed for (student) developers.<br> As a participant of these forums you agree that you
             will uphold this Code of Conduct, and are responsible for<br>
@@ -25,7 +86,6 @@
             fun
             and helpful.<br>
         </p>
-        <div class="content">
             <br>
             <p><b>Please do:</b><br>
                 <br>
@@ -119,10 +179,10 @@
                 purpose by the general public, as this is a public community.<br>
                 • Don't post information that could be used by
                 others to steal your identity, like your street address, your phone
-                number, your social security number, or your credit card number.<br><br><br><br>
+                number, your social security number, or your credit card number.</p><br><br><br><br>
                 <p><b>Rights and
                         Responsibilities</b><br></p>
-                • We encourage
+                <p>• We encourage
                 you to not share information that others could use to harm you.<br>
                 • We are not responsible for the content of any
                 user-created posting, listing or message. The decision to view
@@ -144,31 +204,15 @@
             </p><br><br><br>
 
             <p><b>Expect following Actions for Code of Conduct Violations </b><br></p>
-            • Police Case under Jaipur, Rajasthan Jurisdiction<br>
+            <p>• Police Case under Jaipur, Rajasthan Jurisdiction<br>
             • Permanent ban from access to JECRC University and MSFT Tribe community.<br>
             You are solely responsible for your dealings
             <br><br><br>
             </p>
-            <h3>Report Code of Conduct Violations @ heyayushh@outlook.com </h3>
-            Or
-            <h3> in #Help @ MSFT Tribe Discord Server </h3>
+            <h3>Report Code of Conduct Violations @ <a href="heyayushh@outlook.com">heyayushh@outlook.com </a></h3>
+            <h3>Or</h3>
+            <h3> in #Help @ <a href="https://discord.gg/UdECBta">MSFT Tribe Discord Server </a></h3>
             <br><br><br>
             <br><br><br>
-        </div>
     </div>
 </body>
-
-<style>
-    .p {
-        margin: 30px !important
-    }
-
-    .content {
-        margin-left: 30px;
-        margin-right: 50%;
-    }
-
-    #body {
-        margin: 30px
-    }
-</style>
